@@ -1,0 +1,57 @@
+{% extends 'pdscanui/base.html' %}
+
+{% block content %}
+
+<h1 align="center">Receiver</h1>
+
+<form>
+<div align="center">
+
+  <div class="col-md-6 mb-1">
+    <label for="ReceiverNameInput">Name</label>
+    <input type="text" class="form-control" id="ReceiverNameInput" placeholder="Receiver Name">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="ReceiverManufacturer">Manufacturer</label>
+    <input type="text" class="form-control" id="ReceiverManufacturer" placeholder="Receiver Manufacturer">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="ReceiverType">Type of Receiver</label>
+    <input type="text" class="form-control" id="ReceiverType" placeholder="Type of receiver">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="ReceiverMINTemperature">Min. Temperature</label>
+    <input type="text" class="form-control" id="ReceiverMINTemperature" placeholder="Minimum temperature">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="ReceiverMAXTemperature">Max. Temperature</label>
+    <input type="text" class="form-control" id="ReceiverMAXTemperature" placeholder="Maximum temperature">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="ReceiverSensitiveArea">Sensitive area</label>
+    <input type="text" class="form-control" id="ReceiverSensitiveArea" placeholder="Sensitive area">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="ReceiverSpectralBandwidth">Spectral bandwidth</label>
+    <input type="text" class="form-control" id="ReceiverSpectralBandwidth" placeholder="Spectral bandwidth">
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <label for="ReceiverResponsetime">Response time</label>
+    <input type="text" class="form-control" id="ReceiverResponsetime" placeholder="Response time">
+  </div>
+
+  <a href="#" class="btn btn-success btn-lg" role="button">Save</a>
+  <a href="#" class="btn btn-danger btn-lg" role="button">Delete</a>
+
+</div>
+
+</form>
+
+{% endblock %}

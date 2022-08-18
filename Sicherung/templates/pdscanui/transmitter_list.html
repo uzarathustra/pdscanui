@@ -1,0 +1,36 @@
+{% extends "pdscanui/base.html" %}
+
+{% block content %}
+
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5">
+            <h2 class="text-center"><b>Transmitter List</b></h2>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+
+                <ul>
+                 {% for transmitter in transmitters %}
+                 <li class="list-group-item">
+                     <a href="{% url 'transmitter_modify' transmitter.id %}">
+                         {{ transmitter.name }}
+                     </a>
+                 </li>
+                 {% endfor %}
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

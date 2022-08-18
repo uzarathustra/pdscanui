@@ -1,0 +1,74 @@
+{% extends 'pdscanui/base.html' %}
+
+{% block content %}
+
+<h1 align="center">Transmitter</h1>
+<!--
+<form method="POST">
+  {% csrf_token %}
+  {{form}}
+-->
+<form>
+  <div align="center">
+
+  <div class="col-md-6 mb-1">
+    <label for="TransmitterNameInput">Name</label>
+    <input type="text" name="name" class="form-control" id="TransmitterNameInput" placeholder="Transmitter Name">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="TransmitterManufacturer">Manufacturer</label>
+    <input type="text" name="manufacturer" class="form-control" id="TransmitterManufacturer" placeholder="Transmitter Manufacturer">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="TransmitterType">Type of Transmitter</label>
+    <input type="text" name="type_of_transmitter" class="form-control" id="TransmitterType" placeholder="Type of transmitter">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="TransmitterWavelength">Wavelength</label>
+    <input type="text" name="wavelength" class="form-control" id="TransmitterWavelength" placeholder="Wavelength">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="TransmitterMINTemperature">Min. Temperature</label>
+    <input type="text" name="temperature_min" class="form-control" id="TransmitterMINTemperature" placeholder="Minimum temperature">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="TransmitterMAXTemperature">Max. Temperature</label>
+    <input type="text" name="temperature_max" class="form-control" id="TransmitterMAXTemperature" placeholder="Maximum temperature">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="TransmitterMAXCurrent">Max Current</label>
+    <input type="text" name="current_max" class="form-control" id="TransmitterMAXCurrent" placeholder="Maximum Current">
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <label for="TransmitterResponsetime">Response time</label>
+    <input type="text" name="power_max" class="form-control" id="TransmitterResponsetime" placeholder="Response time">
+  </div>
+
+
+  <a href="#" class="btn btn-success btn-lg" role="button">Save</a>
+  <a href="#" class="btn btn-danger btn-lg" role="button">Delete</a>
+<!--
+  <input type="submit" name="Submit" value="Submit" class="btn btn-success btn-lg" role="button"Save>
+-->
+
+</div>
+</form>
+
+
+<!--
+  <a href="#" class="btn btn-success btn-lg" role="button">Save</a>
+  <a href="#" class="btn btn-danger btn-lg" role="button">Delete</a>
+
+  <button type="button" class="btn btn-success btn-lg">Save</button>
+  <button type="button" class="btn btn-danger btn-lg">Delete</button>
+-->
+
+
+{% endblock %}

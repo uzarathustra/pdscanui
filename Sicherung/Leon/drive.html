@@ -1,0 +1,36 @@
+{% extends 'pdscanui/base.html' %}
+
+{% block content %}
+
+<h1 align="center">Motor-Control</h1>
+
+<form>
+    <div align="center">
+
+        <h5>Akutelle Messdaten</h5>
+
+        <div class="col-md-2 mb-1">
+            <input type="text" class="form-control" placeholder="x-position">
+        </div>
+
+        <div class="col-md-2 mb-1">
+            <input type="text" class="form-control" placeholder="y-position">
+        </div>
+
+        <div class="col-md-2 mb-1">
+            <input type="text" class="form-control" placeholder="z-position">
+        </div>
+
+        <div class="col-md-2 mb-3">
+            <input type="text" class="form-control" placeholder="Optical Power">
+        </div>
+
+
+        <a href="#" class="btn btn-primary btn-lg" role="button">Send</a>
+
+
+</div>
+</form>
+
+
+{% endblock %}

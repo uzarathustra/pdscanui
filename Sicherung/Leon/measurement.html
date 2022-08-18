@@ -1,0 +1,72 @@
+{% extends 'pdscanui/base.html' %}
+
+
+{% block content %}
+
+<h1 align="center">Measurement</h1>
+
+<form>
+<div align="center">
+
+  <div class="col-md-6 mb-1">
+    <label for="DisabledMeasurement">Name</label>
+    <input type="text" class="form-control" id="DisabledMeasurement" placeholder="Messung(NO)" disabled>
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="DisabledMeasurementDate">Manufacturer</label>
+    <input type="text" class="form-control" id="DisabledMeasurementDate" placeholder="Date" disabled>
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="SelectTransmitter">Choose transmitter</label>
+    <select class="form-control" id="SelectTransmitter">
+      <option selected disabled>Choose Transmitter here</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="SelectReceiver">Choose receiver</label>
+    <select class="form-control" id="SelectReceiver">
+      <option selected disabled>Choose receiver here</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="SelectTypeOfMeasurement">Type of measurement</label>
+    <select class="form-control" id="SelectTypeOfMeasurement">
+      <option selected disabled>Choose the type of measurement here</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="Parameter1">Parameter 1</label>
+    <input type="text" class="form-control" id="Parameter1" placeholder="Choose Parameter 1">
+  </div>
+
+  <div class="col-md-6 mb-1">
+    <label for="Parameter2">Parameter 2</label>
+    <input type="text" class="form-control" id="Parameter2" placeholder="Choose Parameter 2">
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <label for="Notice">Notice</label>
+    <input type="text" class="form-control" id="Notice" placeholder="Notice here">
+  </div>
+
+  <a href="#" class="btn btn-success btn-lg" role="button">Start</a>
+
+
+</div>
+</form>
+
+{% endblock %}

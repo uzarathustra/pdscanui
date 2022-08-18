@@ -1,0 +1,43 @@
+{% extends 'pdscanui/base.html' %}
+
+
+{% block content %}
+
+    <h1 align="center">Measurement</h1>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-3">
+
+            </div>
+
+            <div class="col">
+
+                <br><br>
+                {{ error }}
+                <br><br>
+
+                <form method="POST">
+                    {% csrf_token %}
+                    <b>{{ form.as_p }}</b>
+                    <br><br>
+                    <button type="submit" class="btn btn-success">Create</button>
+                </form>
+
+            </div>
+
+            <div class="col-3">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </form>
+
+{% endblock %}
+

@@ -1,0 +1,61 @@
+{% extends 'pdscanui/base.html' %}
+
+{% block content %}
+
+<h1 align="center">Results</h1>
+
+<form>
+<div align="left">
+
+  <div class="col-md-4 mb-4">
+    <label for="SelectMeasurement">Select Measurement</label>
+    <select class="form-control" id="SelectMeasurement">
+      <option selected disabled>Select Measurement here</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="col-md-4 mb-1">
+    <label for="ResultDate">Date</label>
+    <input type="text" class="form-control" id="ResultDate" placeholder="Date-here" readonly>
+  </div>
+
+  <div class="col-md-4 mb-1">
+    <label for="ResultTransmitter">Transmitter</label>
+    <input type="text" class="form-control" id="ResultTransmitter" placeholder="Transmitter-here" readonly>
+  </div>
+
+  <div class="col-md-4 mb-1">
+    <label for="ResultReceiver">Receiver</label>
+    <input type="text" class="form-control" id="ResultReceiver" placeholder="Receiver-here" readonly>
+  </div>
+
+  <div class="col-md-4 mb-1">
+    <label for="ResultTypeOfMeasurement">Type of measurement</label>
+    <input type="text" class="form-control" id="ResultTypeOfMeasurement" placeholder="type of measurement-here" readonly>
+  </div>
+
+  <div class="col-md-4 mb-1">
+    <label for="ResultParamter1">Parameter 1</label>
+    <input type="text" class="form-control" id="ResultParamter1" placeholder="Paramter1-here" readonly>
+  </div>
+
+   <div class="col-md-4 mb-1">
+    <label for="ResultParamter2">Parameter 2</label>
+    <input type="text" class="form-control" id="ResultParamter2" placeholder="Paramter2-here" readonly>
+  </div>
+
+  <div class="col-md-4 mb-5">
+    <label for="ResultNotice">Notice</label>
+    <input type="text" class="form-control" id="ResultNotice" placeholder="Notice-here" readonly>
+  </div>
+
+</div>
+
+  <div id='myDiv'></div>
+
+</form>
+
+{% endblock %}
